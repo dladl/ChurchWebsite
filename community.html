@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>생명숲교회</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            body {
+                font-family: "돋움";
+                font-size: 15px;
+            }
+            a {
+                text-decoration-line: none;
+                color: black;
+            }
+            .clear {
+                clear: both;
+            }
+             /*========header=========*/
+            header{
+                width: 1400px;
+                height: 150px;
+                margin: 0 auto;
+                border: solid 2px black
+            }
+            #logo {
+                float: left;
+                margin: 0 auto;
+            }
+            #logo img {
+                width: 250px;
+                height: 150px;
+            }
+            #menus {
+                float: right;
+                margin-top: 25px;
+                /* border: solid 2px black; */
+            }
+            #top_menu {
+                float: right;
+                text-align: right;
+                width: 300px;
+                font-weight: bold;
+                margin: 45px 40px 0 0;
+                /* border: solid 2px black; */
+            }
+            #main_menu {
+                margin: 30px 420px 0 0;
+                font-family: "맑은고딕";
+                font-size: 30px;
+                color: black; 
+                /* border: solid 2px black; */
+            }
+            #main_menu li {
+                display: inline;
+                list-style-type: none;
+                margin-left: 70px;
+                cursor: pointer;
+                transition: all 0.2s ease-in-out;
+            }
+            #main_menu li:hover {
+                border-bottom: 4px solid #2a70d4;
+                background-color: #eee;
+            }
+            /*=======/header=======*/
+
+            .main_image img {
+                margin: 0 auto;
+                width: 100%;
+                height: 280px;
+                object-fit: fill;
+            }
+
+            /* ========section======== */
+
+            section {
+                width: 1200px;
+                height: 1000px;
+                margin: 0 auto;
+            }
+
+            .main_title {
+                display: flex;
+                margin: 40px auto;
+                gap: 40px;
+            }
+
+            .main_list {
+                width: 250px;
+                border-right: 1px solid #ccc;
+            }
+
+            .main_list h1 {
+                font-size: 24px;
+                padding-bottom: 10px;
+                border-bottom: 2px solid black;
+            }
+
+            .main_list ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            .main_list li {
+                padding: 12px;
+                border-bottom: 1px solid #eee;
+                cursor: pointer;
+                transition: all 0.2s ease-in-out;  /* 부드러운 전환 효과 */
+            }
+
+            .main_list li:hover {
+                font-weight: bold;       /* 글자 진하게 */
+                font-size: 1.05em;       /* 글자 약간 키우기 */
+                background-color: #f5f5f5;  /* 배경도 약간 밝게 */
+            }
+            .main_list li.active {
+                background-color: #eee;
+                font-weight: bold;
+            }
+
+            .main_content {
+                flex-grow: 1;
+            }
+
+            .main_content h1 {
+                font-size: 32px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .main_content hr {
+                border: none;
+                border-top: 2px solid #2a70d4;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .main_img {
+                width: 100%;
+                max-height: 250px;
+                object-fit: cover;
+                margin-bottom: 20px;
+            }
+
+            .main_desc {
+                font-size: 16px;
+                line-height: 1.7;
+            }
+            .main_desc span {
+                font-weight: 600;
+                font-size: large;
+                border-bottom: 2px solid black;
+                
+                padding-bottom: 20px;
+            }
+            .main_desc img {
+                width: 400px;
+                height: 460px;
+            }
+            /*==========/section=======*/
+
+            /*=======footer========*/
+            footer {
+                width: 100%;
+                height: 180px;
+                margin: 0 auto;
+                background-color: #63b19f;
+            }
+            #footer_box {
+                max-width: 100%;
+                height: 150px;
+                margin: 0 auto;
+                /* border: 2px solid black; */
+            }
+            #footer_logo {
+                float: left;
+                margin: 30px 0 30px 350px;
+                /* border: 2px solid black; */
+            }
+            #footer_logo img {
+                width: 200px;
+                height: 70px;
+            }
+            #address {
+                list-style-type: none;
+                float: right;
+                margin: 45px 670px 0 0;
+                /* border: 2px solid black; */
+            }
+            #address li {
+                color: white;
+                font-weight: bold;
+                font-size: 17px;
+            }
+            #address li img {
+                width: 23px;
+                height: 23px;
+                vertical-align: middle;
+            }
+            #address li span {
+                vertical-align: middle;
+            }
+        
+            /*=====/footer======*/
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <a href="main.html"><img src="img/logo1.jpg"></a>
+            </div>
+            <nav id="menus">
+                <div id="top_menu">로그인 | 회원가입 | 공지사항</div>
+                <ul id="main_menu">
+                    <li><a href="introChurch.html">교회소개</a></li>
+                    <li><a href="sermon.html">설교</a></li>
+                    <li><a href="churchNews.html">교회소식</a></li>
+                    <li><a href="community.html">커뮤니티</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="clear"></div>
+        <div class="main_image">
+            <img src="img/introChurch_img_1.jpg">
+        </div>
+        <section>
+            <div class="main_title">
+                <div class="main_list">
+                    <h1>커뮤니티</h1>
+                    <ul>
+                        <li>담임목사 인사말</li>
+                        <li><a href="introChurch.html">생명숲교회는</a></li>
+                        <li><a href="sermon.html">설교</a></li>
+                        <li><a href="churchNews.html">교회소식</a></li>
+                        <li class="active"><a href="community.html">커뮤니티</a></li>
+                        <li style="border-bottom: 3px solid black ;">찾아오시는 길</li>
+                    </ul>
+                </div>
+                <div class="main_content">
+                    <h1>커뮤니티</h1>
+                    <hr />
+                    <p class="main_desc">
+                        <span>질문 : 교회는 무엇인가요??</span><br><br>
+                        교회는 다<br><br>
+                        
+                    </p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div id="footer_box">
+                <div id="footer_logo">
+                    <img src="img/logo1_3.png">
+                </div>
+                <ul id="address">
+                    <li><img src="img/address1.png">&nbsp;<span>인천광역시 부평구 무네미로</span></li>
+                    <br>
+                    <li><img src="img/tell1.png">&nbsp;<span>032-123-4567</span>&nbsp;&nbsp;&nbsp;
+                        <img src="img/mail1.png">&nbsp;<span>email@naver.com</span></li>
+                    <br>
+                    <li>COPYRIGHT (C)생명숲 ALL RIGHTS RESERVED</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
+        
+        

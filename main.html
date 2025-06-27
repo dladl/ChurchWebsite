@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>생명숲교회</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            body {
+                font-family: "돋움";
+                font-size: 15px;
+            }
+            a {
+                text-decoration-line: none;
+                color: black;
+            }
+            .clear {
+                clear: both;
+            }
+             /*========header=========*/
+            header{
+                width: 1400px;
+                height: 150px;
+                margin: 0 auto;
+                /* border: solid 2px black */
+            }
+            #logo {
+                float: left;
+                margin: 0 auto;
+            }
+            #logo img {
+                width: 250px;
+                height: 150px;
+            }
+            #menus {
+                float: right;
+                margin-top: 25px;
+                /* border: solid 2px black; */
+            }
+            #top_menu {
+                float: right;
+                text-align: right;
+                width: 300px;
+                font-weight: bold;
+                margin: 45px 40px 0 0;
+                /* border: solid 2px black; */
+            }
+            #main_menu {
+                margin: 30px 420px 0 0;
+                font-family: "맑은고딕";
+                font-size: 30px;
+                color: black; 
+                /* border: solid 2px black; */
+            }
+            #main_menu li {
+                display: inline;
+                list-style-type: none;
+                margin-left: 70px;
+                cursor: pointer;
+                transition: all 0.2s ease-in-out;
+            }
+            #main_menu li:hover {
+                border-bottom: 4px solid #2a70d4;
+                background-color: #eee;
+            }
+            /*=======/header=======*/
+
+            /* ========section======== */
+            section {
+                width: 1430px;
+                height: 1000px;
+                /* border: solid 2px black; */
+                margin: 20px auto/*100px 200px 250px*/;
+            }
+            #main_section {
+                /* border: solid 2px black; */
+                display: flex;
+                width: 1400px;
+                height: 670px;
+                margin: 20px auto;
+                gap: 30px;
+              
+            }
+            #main_image {
+                width: 870px;
+                height: 635px;
+                margin: 0 0 0 20px;
+                /* border: solid 2px black; */
+            }
+            #main_image img {
+                border-radius: 6px;
+                width: 100%;
+                height: 100%;
+            }
+            #sub_images_grid {
+                width: 450px;
+                height: 650px;
+                display: grid;
+                margin: 0 0 auto 20px;
+                grid-template-columns: repeat(2, 1fr); /*2열*/
+                grid-template-rows: repeat(3,1fr);     /*3행*/
+                gap: 5px;
+                /* border: solid 2px black; */
+            }
+            #sub_images_grid img {
+                width: 200px;
+                height: 200px;
+                object-fit: fill;
+                /* border: 2px solid #ccc; */
+                border-radius: 6px;
+            }
+            /* -------------------------------------- */
+            .slider_container {
+                width: 1400px;
+                overflow: hidden;
+                /* border: 2px solid black; */
+                margin: 30px auto;
+            }
+            #horizontal_scroll {
+                width: max-content;
+                display: flex;
+                margin: 20px auto;
+                animation: scroll 28s ease-in-out infinite;
+                /* overflow-x: auto; */
+                /* white-space: nowrap;  */
+                /* scroll-snap-type: x mandatory; */
+            }
+            #horizontal_scroll img {
+                width: 300px;
+                height: 200px;
+                object-fit: cover;
+                flex-shrink: 0;
+                margin-right: 10px;
+                border-radius: 8px;
+                /* border: 1px solid #ccc; */
+                /* display: inline-block; */
+                /* scroll-snap-align: start;  */
+            }
+            @keyframes scroll {
+                /* 0%   { transform: translateX(0); }
+                5%  { transform: translateX(-310px); }
+                10%  { transform: translateX(-310px); }   
+                15%  { transform: translateX(-620px); }
+                20%  { transform: translateX(-620px); }   
+                25%  { transform: translateX(-930px); }
+                30%  { transform: translateX(-930px); }   
+                35%  { transform: translateX(-1240px); }
+                40%  { transform: translateX(-1240px); }  
+                45%  { transform: translateX(-1550px); }
+                50% { transform: translateX(-1550px); }  
+                55% { transform: translateX(-1860px); }
+                60% { transform: translateX(-1860px); }
+                65% { transform: translateX(-2170px); }
+                70% { transform: translateX(-2170px); }
+                75% { transform: translateX(-2480px); }
+                80% { transform: translateX(-2480px); }
+                85% { transform: translateX(-2790px); }
+                90% { transform: translateX(-2790px); }
+                95% { transform: translateX(-3100px); }
+                100% { transform: translateX(-3100px); } */
+                0%   { transform: translateX(0); }
+                5%  { transform: translateX(-6.6%); }
+                10%  { transform: translateX(-6.6%); }   
+                15%  { transform: translateX(-13.3%); }
+                20%  { transform: translateX(-13.3%); }   
+                25%  { transform: translateX(-19.8%); }
+                30%  { transform: translateX(-19.8%); }   
+                35%  { transform: translateX(-26.6%); }
+                40%  { transform: translateX(-26.6%); }  
+                45%  { transform: translateX(-33.2%); }
+                50% { transform: translateX(-33.2%); }  
+                55% { transform: translateX(-40%); }
+                60% { transform: translateX(-40%); }
+                65% { transform: translateX(-46.6%); }
+                70% { transform: translateX(-46.6%); }
+                75% { transform: translateX(-53.2%); }
+                80% { transform: translateX(-53.2%); }
+                85% { transform: translateX(-59.9%); }
+                90% { transform: translateX(-59.9%); }
+                95% { transform: translateX(-66.6%); }
+                100% { transform: translateX(-66.6%); }
+                
+            }
+            /* -------------------------------------- */
+            /* ========/section============ */
+
+            /*=======footer========*/
+            footer {
+                width: 100%;
+                height: 180px;
+                margin: 0 auto;
+                background-color: #63b19f;
+            }
+            #footer_box {
+                max-width: 100%;
+                height: 150px;
+                margin: 0 auto;
+                /* border: 2px solid black; */
+            }
+            #footer_logo {
+                float: left;
+                margin: 30px 0 30px 350px;
+                /* border: 2px solid black; */
+            }
+            #footer_logo img {
+                width: 200px;
+                height: 70px;   
+            }
+            #address {
+                list-style-type: none;
+                float: right;
+                margin: 35px 670px 0 0px;
+                /* border: 2px solid black; */
+            }
+            #address li {
+                color: white;
+                font-weight: bold;
+                font-size: 17px;
+            }
+            #address li img {
+                width: 23px;
+                height: 23px;
+                vertical-align: middle;
+            }
+            #address li span {
+                vertical-align: middle;
+            }
+        
+            /*=====/footer======*/
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <img src="img/logo1.jpg">
+            </div>
+            <nav id="menus">
+                <div id="top_menu">로그인 | 회원가입 | 공지사항</div>
+                <ul id="main_menu">
+                    <li><a href="introChurch.html">교회소개</a></li>
+                    <li><a href="sermon.html">설교</a></li>
+                    <li><a href="churchNews.html">교회소식</a></li>
+                    <li><a href="community.html">커뮤니티</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="clear"></div>
+        <section>
+            <div id="main_section">
+                <div id="main_image">
+                    <a href="https://www.youtube.com/watch?v=Bwepa3u-Qko" target="_blank">
+                        <img src="img/church1.PNG">
+                    </a>
+                </div>
+                <div id="sub_images_grid">
+                    <a href="sermon.html"><img src="img/sermon.png"></a>
+                    <img src="img/bulletin.png">
+                    <a href="introChurch.html"><img src="img/introduceChurch.png"></a>
+                    <a href="churchNews.html"><img src="img/gallery.png"></a>
+                    <img src="img/coming_road.png">
+                    <a href="https://www.youtube.com/@%EC%83%9D%EB%AA%85%EC%88%B2%EA%B5%90%ED%9A%8C%EC%9D%B8%EC%B2%9C%EB%B3%91%EC%9B%90/featured" target="_blank"><img src="img/youtube1.png"></a>
+                </div>
+            </div>
+            <div class="slider_container">
+                <div id="horizontal_scroll">
+                    <img src="img/img1.jpg" alt="img1">
+                    <img src="img/img2.jpg" alt="img2">
+                    <img src="img/img3.jpg" alt="img3">
+                    <img src="img/img4.jpg" alt="img4">
+                    <img src="img/img5.jpg" alt="img5">
+                    <img src="img/img6.jpg" alt="img6">
+                    <img src="img/img7.jpg" alt="img7">
+                    <img src="img/img8.jpg" alt="img8">
+                    <img src="img/img9.jpg" alt="img9">
+                    <img src="img/img10.jpg" alt="img10">
+                    <!-- 무한 반복을 위해 같은 이미지 한 번 더 복제 -->
+                    <img src="img/img1.jpg" alt="img1">
+                    <img src="img/img2.jpg" alt="img2">
+                    <img src="img/img3.jpg" alt="img3">
+                    <img src="img/img4.jpg" alt="img4">
+                    <img src="img/img5.jpg" alt="img5">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div id="footer_box">
+                <div id="footer_logo">
+                    <img src="img/logo1_3.png">
+                </div>
+                <ul id="address">
+                    <li><img src="img/address1.png">&nbsp;<span>인천광역시 부평구 무네미로</span></li>
+                    <br>
+                    <li><img src="img/tell1.png">&nbsp;<span>032-123-4567</span>&nbsp;&nbsp;&nbsp;
+                        <img src="img/mail1.png">&nbsp;<span>email@naver.com</span></li>
+                    <br>
+                    <li>COPYRIGHT (C)생명숲 ALL RIGHTS RESERVED</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
